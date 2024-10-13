@@ -34,8 +34,7 @@ export default function WeatherWidget() {
 
     try {
       const response = await fetch(
-        `https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&q=${trimmedLocation}`
-      );
+ `https://api.weatherapi.com/v1/current.json?key=8af66a30d837444fbc194517242709&q=${trimmedLocation}`      );
       if (!response.ok) {
         throw new Error("City not found");
       }
